@@ -1,0 +1,100 @@
+body,html,div,ul,li,p,span{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: 'Microsoft YaHei','微软雅黑','宋体';
+}
+li{
+    list-style: none;
+}
+@mainColor:Crimson;
+.link-mask{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0);
+    -webkit-transition: all 200ms;
+    -moz-transition: all 200ms;
+    -ms-transition: all 200ms;
+    -o-transition: all 200ms;
+    transition: all 200ms;
+    z-index:9;
+    position: fixed;
+    left: 0;
+    top: 0;
+    .link-box{
+        width: 100vw;
+        height: 40vh;
+        background: #fff;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        -webkit-transition: all 300ms;
+        -moz-transition: all 300ms;
+        -ms-transition: all 300ms;
+        -o-transition: all 300ms;
+        transition: all 300ms;
+        -webkit-transform: translateY(50vh);
+        -moz-transform: translateY(50vh);
+        -ms-transform: translateY(50vh);
+        -o-transform: translateY(50vh);
+        transform: translateY(50vh);
+        .link-title{
+            text-align: center;
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+            font-size: 14px;
+            font-weight: 600;
+            color: #666;
+            .link-ok{
+                background-color: cornflowerblue;
+                color: #ffffff;
+                width:40px;
+                float: right;
+                border:none;
+
+            }
+        }
+        .link-tabs{
+            padding: 10px;
+            span{
+                padding: 5px;
+                font-size: 12px;
+            }
+            span.span-active{
+                border-bottom: 1px solid @mainColor;
+                color: @mainColor;
+            }
+        }
+        .link-list-box{
+            display: inline-block;
+            white-space:nowrap;
+            overflow:hidden;
+            text-overflow:ellipsis;
+            width: auto;
+            height: 100%;
+            -webkit-transition: all 200ms;
+            -moz-transition: all 200ms;
+            -ms-transition: all 200ms;
+            -o-transition: all 200ms;
+            transition: all 200ms;
+            .link-list{
+                display: inline-block;
+                width: calc(50vw - 41px);
+                height: calc(100% - 34px);
+                border-right: 1px solid #ededed;
+                overflow-y: scroll;
+                padding: 0 20px;
+                .link-item{
+                    outline: none;
+                    cursor: pointer;
+                    padding: 5px;
+                    border-bottom: 1px solid #eee;
+                }
+                .link-item-active{
+                    background: @mainColor;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

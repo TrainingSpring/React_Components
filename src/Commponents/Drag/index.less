@@ -1,0 +1,36 @@
+/**********************DragParent  css  start******************************/
+.DragParent{
+}
+/**********************DragSpace  css  start******************************/
+.DragSpace{
+}
+.DragSpaceActive{
+  -webkit-box-shadow: 1px 1px 15px 1px rgba(75,160,255,.3);;
+  -moz-box-shadow: 1px 1px 15px 1px rgba(75,160,255,.3);;
+  box-shadow: 1px 1px 15px 1px rgba(75,160,255,.3);;
+}
+.DragSpaceInsertActive::before{
+  content: "松开鼠标放置于此";
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  display: block;
+  height:20px;
+  border: 1px dashed rgba(0,0,255,0.4);
+  background-color: rgba(0,0,255,0.2);
+}
+.DragSpaceInsertActive_Bottom::after{
+  content: "松开鼠标放置于此";
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  display: block;
+  height:20px;
+  border: 1px dashed rgba(0,0,255,0.4);
+  background-color: rgba(0,0,255,0.2);
+}
+/**********************DragChild  css  start******************************/
+.DragChild{
+  cursor: move;
+  user-select: none;
+}
