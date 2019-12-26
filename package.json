@@ -25,6 +25,7 @@
     "react": "^16.8.6",
     "strip-ansi": "^5.2.0",
     "style-loader": "^0.23.1",
+    "three.js": "^0.77.1",
     "ts-loader": "^6.0.2",
     "typescript": "^3.5.1",
     "url-loader": "^2.0.0",
@@ -36,6 +37,7 @@
     "@babel/preset-react": "^7.0.0",
     "react-dom": "^16.8.6",
     "react-hot-loader": "^4.11.0",
+    "three-js": "^79.0.0",
     "webpack": "^4.33.0",
     "webpack-dev-server": "^3.4.1"
   }

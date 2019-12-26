@@ -4,6 +4,7 @@ import DragParent ,{DragChildData} from "./Commponents/Drag";
 import './index.less'
 import '../index.less'
 import Detection from "./Commponents/Detection";
+import Cookie from "./Commponents/Cookie"
 /**
  * @Author: Training
  * @desc 自己造的轮子的测试界面
@@ -19,14 +20,16 @@ class App extends React.Component {
   constructor(props: any) {
     super(props);
   }
-  public dragChange = (t:any,last:any,data:any)=>{
-    console.log(t,last,data);
-  };
-  public render() {
+  public componentDidMount(): void {
+    let canvas:any = document.getElementById("canvas_test");
+    let gl = canvas.getContext("experimental-webgl");
+    console.log(canvas);
+  }
 
+  public render() {
     return (
       <div>
-        <Detection type={"number"}><input type="text"/></Detection>
+        <canvas id={"canvas_test"} ref={'canvas'} />
       </div>
     );
   }
